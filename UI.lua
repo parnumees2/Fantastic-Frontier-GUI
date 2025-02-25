@@ -25,12 +25,12 @@ function UI:CreateWindow(c)
 	local togFrame = Instance.new("Frame")
 	local togTextLabel = Instance.new("TextLabel")
 	local togTrigger = Instance.new("TextButton")
-	local destroyAero = Instance.new("TextButton")
+	local destroyGUI = Instance.new("TextButton")
 	local keybind = Enum.KeyCode.LeftControl
 
 	local minMax = Instance.new("ImageButton")
 
-	screenGui.Name = "Aero"
+	screenGui.Name = "GUI"
 	screenGui.ResetOnSpawn = false
 	screenGui.IgnoreGuiInset = true
 	screenGui.Parent = CoreGui
@@ -66,18 +66,18 @@ function UI:CreateWindow(c)
 	uill_settings.Parent = settingsFrame
 
 	togFrame.BackgroundTransparency = 1
-	togFrame.Name = "ToggleAero"
+	togFrame.Name = "ToggleGUI"
 	togFrame.BorderSizePixel = 0
 	togFrame.Size = UDim2.new(1, 0, 0.2, 0)
 	togFrame.Parent = settingsFrame
 
 	togTextLabel.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-	togTextLabel.Name = "ToggleAero"
+	togTextLabel.Name = "ToggleGUI"
 	togTextLabel.BorderSizePixel = 0
 	togTextLabel.RichText = true
 	togTextLabel.Size = UDim2.new(0.75, 0, 1, 0)
 	togTextLabel.Font = Enum.Font.SourceSans
-	togTextLabel.Text = "Toggle Aero"
+	togTextLabel.Text = "Toggle GUI"
 	togTextLabel.TextColor3 = Color3.new(1, 1, 1)
 	togTextLabel.TextScaled = true
 	togTextLabel.Parent = togFrame
@@ -112,22 +112,22 @@ function UI:CreateWindow(c)
 	togTrigger.Parent = togFrame
 
 	local areyousure = nil
-	destroyAero.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
-	destroyAero.Name = "DestroyAero"
-	destroyAero.BorderSizePixel = 0
-	destroyAero.RichText = true
-	destroyAero.Size = UDim2.new(1, 0, 0.2, 0)
-	destroyAero.Font = Enum.Font.SourceSans
-	destroyAero.Text = "Destroy Aero"
-	destroyAero.TextColor3 = Color3.new(1, 1, 1)
-	destroyAero.TextScaled = true
-	destroyAero.MouseButton1Down:Connect(function()
+	destroyGUI.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
+	destroyGUI.Name = "DestroyGUI"
+	destroyGUI.BorderSizePixel = 0
+	destroyGUI.RichText = true
+	destroyGUI.Size = UDim2.new(1, 0, 0.2, 0)
+	destroyGUI.Font = Enum.Font.SourceSans
+	destroyGUI.Text = "Destroy GUI"
+	destroyGUI.TextColor3 = Color3.new(1, 1, 1)
+	destroyGUI.TextScaled = true
+	destroyGUI.MouseButton1Down:Connect(function()
 		if not areyousure then
 			areyousure = true
-			destroyAero.Text = "<font color='#ff0000'>Are you sure?</font>"
+			destroyGUI.Text = "<font color='#ff0000'>Are you sure?</font>"
 			task.delay(2, function()
 				areyousure = nil
-				destroyAero.Text = "Destroy Aero"
+				destroyGUI.Text = "Destroy GUI"
 			end)
 		else
 			for _, v in pairs(connections) do
@@ -138,7 +138,7 @@ function UI:CreateWindow(c)
 			frame.Parent:Destroy()
 		end
 	end)
-	destroyAero.Parent = settingsFrame
+	destroyGUI.Parent = settingsFrame
 
 	setting.Size = UDim2.new(0.05, 0, 1, 0)
 	setting.Name = "Settings"
