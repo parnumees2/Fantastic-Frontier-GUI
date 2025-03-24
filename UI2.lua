@@ -218,7 +218,6 @@ end
 TextButton1.TextColor3 = theme3
 end
 Frame.Visible = true
-play("rbxassetid://1412830636")
 end)
 
 local InsideTab = {}
@@ -274,7 +273,6 @@ TextButton_Roundify_2px_2.SliceCenter = Rect.new(100, 100, 100, 100)
 TextButton_Roundify_2px_2.SliceScale = 0.020
 
 TextButton.MouseButton1Click:Connect(function()
-    play("rbxassetid://178104975")
     if not IsDropped then
         IsDropped = true
         TextButton.TextColor3 = theme3
@@ -509,7 +507,6 @@ local enabled = false
 function trigger()
 enabled = not enabled
 pcall(callback,enabled)
-play("rbxassetid://6309164078")
 if enabled then
     Frame_t.ImageColor3 = theme3
     if toolight then
@@ -603,7 +600,6 @@ function InsideTab:CreateCheckbox(text,callback)
     function triggercheat()
     enabledcheat = not enabledcheat
     pcall(callback,enabledcheat)
-    play("rbxassetid://6309164078")
     if enabledcheat then
         InsideCheatFrame.ImageColor3 = theme3
     else
@@ -649,7 +645,6 @@ function InsideTab:CreateButton(text, callback)
 
     Button.MouseButton1Click:Connect(function()
 pcall(callback)
-play("rbxassetid://178104975")
     end)
 end
 return InsideTab
