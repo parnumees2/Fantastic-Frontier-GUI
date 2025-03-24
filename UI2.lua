@@ -1,24 +1,13 @@
 local library = {}
-function play(id)
-    for _, v in next, workspace:GetChildren() do
-        if v.Name == "GUISound" then
-            v:Destroy()
-        end
-    end
-    local Sound = Instance.new("Sound", workspace)
-    Sound.Name = "GUISound"
-    Sound.Volume = 6
-    Sound.SoundId = id
-    Sound:Play()
- end
 
 function library:CreateWindow(name,theme)
 local theme1
 local theme2
 local theme3
 local toolight = false
+
     for i,v in pairs(game.CoreGui:GetChildren()) do
-if v.Name == "By Shaddow" then
+if v.Name == "By snow4092" then
         v:Destroy()
     end
 end
@@ -78,7 +67,7 @@ local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
-Screen.Name = "By Shaddow"
+Screen.Name = "By snow4092"
 Screen.Parent = game:WaitForChild("CoreGui")
 Screen.Enabled = true
 
