@@ -78,7 +78,7 @@ Top.BackgroundColor3 = Color3.fromRGB(33, 32, 49)
 Top.BackgroundTransparency = 1.000
 Top.Active = true
 Top.Position = UDim2.new(0.5, 0, 0.240482569, 0)
-Top.Size = UDim2.new(0, 558, 0, 25)
+Top.Size = UDim2.new(0, 650, 0, 25)
 Top.Image = "rbxassetid://3570695787"
 Top.ImageColor3 = theme1
 Top.ScaleType = Enum.ScaleType.Slice
@@ -112,7 +112,7 @@ Main.AnchorPoint = Vector2.new(0.5, 0.5)
 Main.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
 Main.BackgroundTransparency = 1.000
 Main.Position = UDim2.new(0.5, 0, 6.75571394, 0)
-Main.Size = UDim2.new(0, 558, 0, 298)
+Main.Size = UDim2.new(0, 650, 0, 350)
 Main.Image = "rbxassetid://3570695787"
 Main.ImageColor3 = theme2
 Main.ScaleType = Enum.ScaleType.Slice
@@ -124,7 +124,7 @@ Tabs.Parent = TabContainer
 Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Tabs.BackgroundTransparency = 1.000
 Tabs.Position = UDim2.new(0.0129999956, 0, 0.0300000086, 0)
-Tabs.Size = UDim2.new(0, 119, 0, 282)
+Tabs.Size = UDim2.new(0, 140, 0, 330)
 Tabs.Image = "rbxassetid://3570695787"
 Tabs.ImageColor3 = theme1
 Tabs.ScaleType = Enum.ScaleType.Slice
@@ -142,8 +142,8 @@ Items.Name = "Items"
 Items.Parent = Main
 Items.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Items.BackgroundTransparency = 1.000
-Items.Position = UDim2.new(0.5, -175, 0.5, -125)
-Items.Size = UDim2.new(0, 450, 0, 250)
+Items.Position = UDim2.new(0.245519713, 0, 0.030201342, 0)
+Items.Size = UDim2.new(0, 490, 0, 330)
 Items.Image = "rbxassetid://3570695787"
 Items.ImageColor3 = theme1
 Items.ScaleType = Enum.ScaleType.Slice
@@ -187,7 +187,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.0170000009, 0, 0.0359999985, 0)
-Frame.Size = UDim2.new(0, 399, 0, 264)
+Frame.Size = UDim2.new(0, 470, 0, 310)
 Frame.CanvasSize = UDim2.new(0, 0, 1.1,0)
 Frame.ScrollBarImageColor3 = theme2
 Frame.ScrollBarThickness = 7
@@ -197,8 +197,10 @@ UICorner.Parent = Frame
 UIGridLayout_2.Parent = Frame
 UIGridLayout_2.FillDirection = Enum.FillDirection.Vertical
 UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-UIGridLayout_2.CellSize = UDim2.new(0, 70, 0, 23)
+UIGridLayout_2.CellSize = UDim2.new(0, 450, 0, 30)
 UIGridLayout_2.StartCorner = Enum.StartCorner.TopRight
+UIGridLayout_2.VerticalAlignment = Enum.VerticalAlignment.Top
+UIGridLayout_2.Padding = UDim.new(0, 5)
 
 Frame.ChildAdded:Connect(function()
     if #Frame:GetChildren() > 13 then
@@ -238,7 +240,7 @@ Dropdown.Name = "Dropdown"
 Dropdown.Parent = Frame
 Dropdown.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Dropdown.BackgroundTransparency = 1.000
-Dropdown.Size = UDim2.new(0, 200, 0, 50)
+Dropdown.Size = UDim2.new(0, 300, 0, 50)
 Dropdown.Font = Enum.Font.SourceSansSemibold
 Dropdown.Text = text
 Dropdown.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -249,7 +251,7 @@ TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.BackgroundTransparency = 1.000
 TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
 TextButton.BorderSizePixel = 0
-TextButton.Position = UDim2.new(1, 0, 0, 0)
+TextButton.Position = UDim2.new(1.1, 0, 0, 0)
 TextButton.Size = UDim2.new(0, 31, 0, 27)
 TextButton.ZIndex = 2
 TextButton.Font = Enum.Font.SourceSansBold
@@ -309,8 +311,8 @@ DropdownContainer.Name = "DropdownContainer"
 DropdownContainer.Parent = TextButton
 DropdownContainer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 DropdownContainer.BackgroundTransparency = 1.000
-DropdownContainer.Position = UDim2.new(1.46359456, 0, 0, 0)
-DropdownContainer.Size = UDim2.new(0, 197, 0, BodyYSize)
+DropdownContainer.Position = UDim2.new(1.5, 0, 0, 0)
+DropdownContainer.Size = UDim2.new(0, 250, 0, BodyYSize)
 DropdownContainer.Image = "rbxassetid://3570695787"
 DropdownContainer.ImageColor3 = theme2
 DropdownContainer.Visible = false
@@ -345,7 +347,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     Slider.Parent = Frame
     Slider.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Slider.BackgroundTransparency = 1.000
-    Slider.Size = UDim2.new(0, 200, 0, 50)
+    Slider.Size = UDim2.new(0, 300, 0, 50)
     Slider.Font = Enum.Font.SourceSansSemibold
     Slider.Text = text
     Slider.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -355,7 +357,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     Frame_3.Parent = Slider
     Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Frame_3.BackgroundTransparency = 1.000
-    Frame_3.Position = UDim2.new(1, 0, 0.395000011, 0)
+    Frame_3.Position = UDim2.new(1.1, 0, 0.395, 0)
     Frame_3.Size = UDim2.new(0, 148, 0, 8)
     Frame_3.Image = "rbxassetid://3570695787"
     Frame_3.ImageColor3 = theme2
@@ -368,7 +370,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     SliderButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     SliderButton.BackgroundTransparency = 1.000
     SliderButton.BorderSizePixel = 0
-    SliderButton.Position = UDim2.new(1, 0, 0.391304344, 0)
+    SliderButton.Position = UDim2.new(1.1, 0, 0.391, 0)
     SliderButton.Size = UDim2.new(0, 148, 0, 8)
     SliderButton.Font = Enum.Font.SourceSans
     SliderButton.Text = ""
@@ -405,7 +407,7 @@ function InsideTab:CreateSlider(text, minvalue, maxvalue, callback)
     TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     TextLabel_2.BackgroundTransparency = 1.000
     TextLabel_2.BorderSizePixel = 2
-    TextLabel_2.Position = UDim2.new(3.10714293, 0, 0.4, 0)
+    TextLabel_2.Position = UDim2.new(1.8, 0, 0.4, 0)
     TextLabel_2.Size = UDim2.new(0, 33, 0, 7)
     TextLabel_2.Font = Enum.Font.SourceSansBold
     TextLabel_2.Text = tostring(minvalue)
@@ -463,7 +465,7 @@ function InsideTab:CreateToggle(text,callback)
 Toggle_2.Parent = Frame
 Toggle_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Toggle_2.BackgroundTransparency = 1.000
-Toggle_2.Size = UDim2.new(0, 200, 0, 50)
+Toggle_2.Size = UDim2.new(0, 300, 0, 50)
 Toggle_2.Font = Enum.Font.SourceSansSemibold
 Toggle_2.Text = text
 Toggle_2.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -473,7 +475,7 @@ Frame_t.Name = "Frame"
 Frame_t.Parent = Toggle_2
 Frame_t.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame_t.BackgroundTransparency = 1.000
-Frame_t.Position = UDim2.new(1, 0, 0.333333343, 0)
+Frame_t.Position = UDim2.new(1.1, 0, 0.333, 0)
 Frame_t.Size = UDim2.new(0, 27, 0, 13)
 Frame_t.Image = "rbxassetid://3570695787"
 Frame_t.ImageColor3 = theme2
@@ -496,7 +498,7 @@ ToggleButton.Name = "ToggleButton"
 ToggleButton.Parent = Toggle_2
 ToggleButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ToggleButton.BackgroundTransparency = 1.000
-ToggleButton.Position = UDim2.new(1, 0, 0.333333552, 0)
+ToggleButton.Position = UDim2.new(1.1, 0, 0.333, 0)
 ToggleButton.Size = UDim2.new(0, 27, 0, 15)
 ToggleButton.Font = Enum.Font.SourceSans
 ToggleButton.Text = ""
@@ -555,7 +557,7 @@ function InsideTab:CreateCheckbox(text,callback)
     Cheat.Parent = Frame
     Cheat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Cheat.BackgroundTransparency = 1.000
-    Cheat.Size = UDim2.new(0, 200, 0, 50)
+    Cheat.Size = UDim2.new(0, 300, 0, 50)
     Cheat.Text = text
     Cheat.Font = Enum.Font.SourceSansSemibold
     Cheat.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -565,7 +567,7 @@ function InsideTab:CreateCheckbox(text,callback)
     MainCheatFrame.Parent = Cheat
     MainCheatFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     MainCheatFrame.BackgroundTransparency = 1.000
-    MainCheatFrame.Position = UDim2.new(1, 0, 0.129999995, 0)
+    MainCheatFrame.Position = UDim2.new(1.1, 0, 0.13, 0)
     MainCheatFrame.Size = UDim2.new(0, 18, 0, 18)
     MainCheatFrame.Image = "rbxassetid://3570695787"
     MainCheatFrame.ImageColor3 = theme2
@@ -620,13 +622,13 @@ function InsideTab:CreateButton(text, callback)
     Button.BackgroundColor3 = Color3.fromRGB(116, 116, 116)
     Button.BackgroundTransparency = 1.000
     Button.BorderSizePixel = 0
-    Button.Position = UDim2.new(-0.00554528646, 0, 0.0607142858, 0)
-    Button.Size = UDim2.new(0, 36, 0, 21)
+    Button.Position = UDim2.new(0.05, 0, 0.06, 0)
+    Button.Size = UDim2.new(0, 300, 0, 35)
     Button.ZIndex = 2
     Button.Font = Enum.Font.SourceSansSemibold
     Button.Text = text
     Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Button.TextSize = 14.000
+    Button.TextSize = 16.000
     
     Button_Roundify_3px.Name = "Button_Roundify_3px"
     Button_Roundify_3px.Parent = Button
@@ -642,6 +644,18 @@ function InsideTab:CreateButton(text, callback)
     Button_Roundify_3px.ScaleType = Enum.ScaleType.Slice
     Button_Roundify_3px.SliceCenter = Rect.new(100, 100, 100, 100)
     Button_Roundify_3px.SliceScale = 0.030
+
+    Button.MouseEnter:Connect(function()
+        Button_Roundify_3px.ImageColor3 = Color3.fromRGB(
+            math.floor(theme3.R * 255 * 0.8),
+            math.floor(theme3.G * 255 * 0.8),
+            math.floor(theme3.B * 255 * 0.8)
+        )
+    end)
+    
+    Button.MouseLeave:Connect(function()
+        Button_Roundify_3px.ImageColor3 = theme3
+    end)
 
     Button.MouseButton1Click:Connect(function()
 pcall(callback)
